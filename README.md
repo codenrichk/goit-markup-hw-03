@@ -1,2 +1,2 @@
-# goit-markup-hw-03
-tercera tarea
+# goit-markup-hw-02
+Tarea2GoIT

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --color-background: #e5e5e5;
+  --color-primary: #2196f3;
+  --color-secundary: #2f303a;
+  --color-text: #212121;
+  --color-text-contact: #757575;
+}
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  background-color: #fff;
+  color: var(--color-text);
+  font-size: 14px;
+  height: 2;
+  font-weight: 400;
+}
+
+.logo {
+  font-family: 'Raleway';
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+.buttons-item .buttons-item-button {
+  font-size: 16px;
+}
+.navigation-list-items-item {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.navigation-list-items-item:hover,
+.navigation-list-items-item:focus {
+  color: var(--color-primary);
+}
+.dataright-item-email {
+  color: var(--color-text-contact);
+}
+.dataright-item-phone {
+  color: var(--color-text-contact);
+}
+.dataright-item-email:hover,
+.dataright-item-email:focus {
+  color: var(--color-primary);
+}
+.dataright-item-phone:hover,
+.dataright-item-phone:focus {
+  color: var(--color-primary);
+}
+.buttons-item-button {
+  cursor: pointer;
+  color: var(--color-text);
+  border-radius: 10x;
+}
+.buttons-item-button:hover,
+.buttons-item-button:focus {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+  color: #fff;
+}
+.filter-portfolio {
+  visibility: hidden;
+}
+
+.container {
+  background-color: var(--color-secundary);
+  width: auto;
+}
+
+.container h1 {
+  color: #fff;
+}
+.container .buttons-item-button-index {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.image-description {
+  font-size: 18px;
+  font-weight: 700;
+  height: 2;
+}
+.text-description {
+  line-height: 1.875;
+  color: var(--color-text-contact);
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-container {
+  background-color: var(--color-secundary);
+}
+.footer-container .icon {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 26;
+  font-weight: 700;
+}
+
+.footer-direction {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-mail {
+  color: var(--color-text-contact);
+  text-decoration: none;
+}
+.footer-phone {
+  color: var(--color-text-contact);
+  text-decoration: none;
+}
