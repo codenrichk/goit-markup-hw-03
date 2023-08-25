@@ -15,8 +15,20 @@ body {
   font-size: 14px;
   height: 2;
   font-weight: 400;
+  box-sizing: border-box;
 }
-
+html {
+  width: auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
   font-family: 'Raleway';
   color: var(--color-primary);
@@ -29,6 +41,20 @@ li {
 .buttons-item .buttons-item-button {
   font-size: 16px;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation-list-items {
+  box-sizing: inherit;
+  padding-left: 70px;
+}
+
 .navigation-list-items-item {
   color: var(--color-text);
   text-decoration: none;
@@ -36,6 +62,12 @@ li {
 .navigation-list-items-item:hover,
 .navigation-list-items-item:focus {
   color: var(--color-primary);
+}
+.dataright {
+  display: flex;
+}
+.dataright-item {
+  margin-right: 5rem;
 }
 .dataright-item-email {
   color: var(--color-text-contact);
@@ -66,22 +98,54 @@ li {
   visibility: hidden;
 }
 
-.container {
+.section-primary {
   background-color: var(--color-secundary);
   width: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.container h1 {
+.section-primary h1 {
   color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  width: 43.5%;
+  text-align: center;
 }
-.container .buttons-item-button-index {
+.section-primary .buttons-item-button-index {
   background-color: var(--color-primary);
   color: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 261px;
+}
+.container-list {
+  display: flex;
+  justify-content: space-between;
+}
+.container-list li {
+  width: 270px;
+}
+.container h2 {
+  text-align: center;
+}
+.container-image {
+  display: flex;
+  justify-content: space-between;
 }
 .image-description {
   font-size: 18px;
   font-weight: 700;
   height: 2;
+}
+.container-team {
+  display: flex;
+  justify-content: space-between;
 }
 .text-description {
   line-height: 1.875;
@@ -89,10 +153,10 @@ li {
   font-size: 16px;
   font-weight: 400;
 }
-.footer-container {
+.footer {
   background-color: var(--color-secundary);
 }
-.footer-container .icon {
+.footer .icon {
   color: var(--color-primary);
   text-decoration: none;
   font-size: 26;
