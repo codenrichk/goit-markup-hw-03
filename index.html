@@ -1,136 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Studio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <nav class="navigation">
-        <a class="logo">WebStudio</a>
-        <ul class="navigation-list">
-          <li class="navigation-list-items">
-            <a class="navigation-list-items-item" href="">Estudio</a>
-          </li>
-          <li class="navigation-list-items">
-            <a class="navigation-list-items-item" href="portfolio.html">Portafolio</a>
-          </li>
-          <li class="navigation-list-items">
-            <a class="navigation-list-items-item" href="">Contactos</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="dataright">
-        <li class="dataright-item">
-          <a class="dataright-item-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="dataright-item">
-          <a class="dataright-item-phone" href="tel:+525555296000">+52 55 5529 6000</a>
-        </li>
-      </ul>
-    </header>
-    <main class="">
-      <section class="section-primary">
-        <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="buttons-item-button-index" type="button">Solicite nuestro servicio</button>
+      <header class="navBar">
+        <div class="container">
+          <nav class="navSection">
+            <span class="navIcon"><a href="./index.html" class="iconName">Web<span class="navIconFull">Studio</span> </a></span>
+            <div class="navBox">
+              <ul class="list navList">
+                <li><a href="./index.html" class="link navLink current">Estudio</a></li>
+            <li><a href="./portfolio.html" class="link navLink">Portafolio</a></li>
+            <li><a href="#" class="link navLink">Contactos</a></li>
+          </ul>
+          <ul class="list navList">
+            <li>
+              <a href="mailto:info@devstudio.com" class="navContact link">info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+52555296000" class="navContact link">+525 555 296 000</a></li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+      </header>
+      <main>
+      <section class="main section">
+        <div class="container mainTheme">
+          <h1 class="mainTitle">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button type="button" class="mainButton">Solicite nuestro servicio</button>
+        </div>
       </section>
-
-      <section class="container">
-        <ul class="container-list">
-          <li>
-            <h3>ATENCIÓN A LOS DETALLES</h3>
-            <p>
-              Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
-              una solución a su medida.
-            </p>
-          </li>
-          <li>
-            <h3>PUNTUALIDAD</h3>
-            <p>
-              Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
-              empresa: respetar su tiempo y respetar los plazos acordados.
-            </p>
-          </li>
-          <li>
-            <h3>PLANIFICACIÓN</h3>
-            <p>
-              Usted podrá observar y participar en cada fase del desarrollo y aplicación de
-              soluciones.
-            </p>
-          </li>
-          <li>
-            <h3>TEGNOLOGÍA MODERNA</h3>
-            <p>
-              Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
-              simplificar los procesos laborales.
-            </p>
-          </li>
-        </ul>
+      <section class="mainValues section">
+        <div class="container">
+          <ul class="list cardSet">
+            <li>
+              <h3 class="detail">ATENCION A LOS DETALLES</h3>
+              <p class="content">
+                Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
+                una solución a su medida.
+              </p>
+            </li>
+            <li>
+              <h3 class="detail">PUNTUALIDAD</h3>
+              <p class="content">
+                Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+                empresa: respetar su tiempo y respetar los plazos acordados.
+              </p>
+            </li>
+            <li>
+              <h3 class="detail">PLANIFICACIÓN</h3>
+              <p class="content">
+                Usted podrá observar y participar en cada fase del desarrollo y aplicación de
+                soluciones.
+              </p>
+            </li>
+            <li>
+              <h3 class="detail">TEGNOLOGÍA MODERNA</h3>
+              <p class="content">
+                Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
+                simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-
-      <section class="container">
-        <h2>A qué nos dedicamos</h2>
-        <ul class="container-image">
-          <li>
-            <img src="images/capa1.jpg" width="373" alt="escribiendo en una laptop" />
-          </li>
-          <li>
-            <img src="images/capa2.jpg" width="373" alt="diseñando una interfaz movil" />
-          </li>
-          <li>
-            <img src="images/capa3.jpg" width="373" alt="mirando una paleta de colores" />
-          </li>
-        </ul>
+      <section class="mainAbout section">
+        <div class="container">
+          <h2 class="subtitle">A qué nos dedicamos</h2>
+          <ul class="list about">
+            <li class="aboutImg">
+              <img src="./images/capa1.jpg" alt="Code" class="img" />
+            </li>
+            <li class="aboutImg">
+              <img src="./images/capa2.jpg" alt="Web" class="img" />
+            </li>
+            <li>
+              <img src="./images/capa3.jpg" alt="Design" class="img" />
+            </li class="aboutImg">
+          </ul>
+        </div>
       </section>
-
-      <section class="container">
-        <h2>Nuestro Equipo</h2>
-        <ul class="container-team">
-          <li>
-            <img src="images/capa4.jpg" width="270" alt="Foto de Andres" />
-            <h3>Andrés Cubo</h3>
-            <p>Diseñador de Productos</p>
-          </li>
-          <li>
-            <img src="images/capa5.jpg" width="270" alt="foto de Carla" />
-            <h3>Carla Palacios</h3>
-            <p>Desarrolladora Frontend</p>
-          </li>
-
-          <li>
-            <img src="images/capa6.jpg" width="270" alt="foto de Mario" />
-            <h3>Mario Dorado</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="images/capa7.jpg" width="270" alt="foto de Pablo" />
-            <h3>Pablo Mijangos</h3>
-            <p>Diseñador IU</p>
-          </li>
-        </ul>
+      <section id="mainTeam" class="team section">
+        <div class="container">
+          <h2 class="subtitle">Nuestro equipo</h2>
+          <ul class="list cardSet">
+            <li class="teamMember memberCard">
+              <img class="teamPhoto img" src="./images/capa4.jpg " alt="Andres" width="270" height="260" />
+              <div class="teamContent">
+                <h3 class="teamName">Andrés Cubo</h3>
+              <p class="teamJob">Diseñador de Productos</p>
+              </div>
+            </li>
+            <li class="teamMember memberCard">
+              <img class="teamPhoto img" src="./images/capa5.jpg" alt="Carla" width="270" height="260" />
+              <div class="teamContent">
+              <h3 class="teamName">Carla Palacios</h3>
+              <p class="teamJob">Desarrolladora Frontend</p>
+              </div>
+            </li>
+            <li class="teamMember memberCard">
+              <img class="teamPhoto img" src="./images/capa6.jpg" alt="Mario" width="270" height="260" />
+              <div class="teamContent">
+              <h3 class="teamName">Mario Dorado</h3>
+              <p class="teamJob">Marketing</p>
+              </div>
+            </li>
+            <li class="teamMember memberCard">
+              <img class="teamPhoto img" src="./images/capa7.jpg" alt="Pablo" width="270" height="260" />
+              <div class="teamContent">
+              <h3 class="teamName">Pablo Mijangos</h3>
+              <p class="teamJob">Diseñador IU</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="icon" href="">WebStudio</a>
-      <address class="">
-        <ul class="">
-          <li class="">
-            <a
-              class="footer-direction"
-              target="_blank"
-              href="https://www.google.com/maps/@19.5100715,-99.1326615,3a,75y,327.9h,90t/data=!3m6!1e1!3m4!1sdFQdzP6j5XSL3M-ligQvcw!2e0!7i16384!8i8192?entry=ttu"
-              rel="noopener noreferrer"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
+      <div class="container">
+        <div class="footerDetail">
+        <a href="./index.html" class="iconName">Web<span class="footerIconFull">Studio</span> </a>
+        <ul class="list detailList">
+          <li><address><a href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
+                class="ubication link">Calz. Ticomán 500, Ciudad de México, CDMX, México</a></address>
           </li>
-          <li class="">
-            <a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li>
+            <a href="mailto:info@devstudio.com" class="footerContact link">info@devstudio.com</a>
           </li>
-          <li class="">
-            <a class="footer-phone" href="tel:+525555296000">+52 55 5529 6000</a>
-          </li>
+          <li><a href="tel:+525555296000" class="footerContact link">+525 555 296 000</a></li>
         </ul>
-      </address>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
