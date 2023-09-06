@@ -1,143 +1,172 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>WebStudio</title>
   </head>
+<div>
   <body>
-      <header class="navBar">
-        <div class="container">
-          <nav class="navSection">
-            <span class="navIcon"><a href="./index.html" class="iconName">WebStudio </a></span>
-            <div class="navBox">
-              <ul class="list navList">
-                <li><a href="./index.html" class="link navLink current">Estudio</a></li>
-            <li><a href="./portfolio.html" class="link navLink">Portafolio</a></li>
-            <li><a href="#" class="link navLink">Contactos</a></li>
+    <!-- header-section-->
+    <header class="main_header">
+      <div class="navigation_container container">
+        <span><a class="logo" href="#">WebStudio</a></span>
+        <nav class="navigation">
+          <ul class="navigation_bar">
+            <li><a href="./index.html" class="nav_tap current">Estudio</a></li>
+            <li><a href="./portfolio.html" class="nav_tap">Portafolio</a></li>
+            <li><a href="#" class="nav_tap">Contactos</a></li>
           </ul>
-          <ul class="list navList">
-            <li>
-              <a href="mailto:info@devstudio.com" class="navContact link">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+52555296000" class="navContact link">+525 555 296 000</a></li>
-          </ul>
-        </div>
         </nav>
+        <ul class="navigation_links">
+          <li><a class="_link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="_link" href="tel:+525555296000">+52 555 529 6000</a></li>
+        </ul>
       </div>
-      </header>
-      <main>
-      <section class="main section">
-        <div class="container mainTheme">
-          <h1 class="mainTitle">SOLUCIONES EFICACES PARA <br> SU NEGOCIO</h1>
-          <button type="button" class="mainButton">Solicite nuestro servicio</button>
+    </header>
+
+    <!-- main-content-section-->
+    <main>
+      <section class="main_seccion first">
+        <div class="main_container">
+          <h1 class="main_title main__title-container">soluciones eficientes para su negocio</h1>
+          <button class="btn-primary" type="button">Solicita nuestro servicio</button>
         </div>
       </section>
-      <section class="mainValues section">
+
+      <section class="detailed container">
+        <ul class="section_ul detailed_ul">
+          <li class="first_rectangle">
+            <h3 class="job_title">ATENCION A LOS DETALLES</h3>
+            <p class="job_description">
+              Nos adentramos en todos los detalles y procesos de su negocio, asi para desarrollar
+              una solucion a su medida.
+            </p>
+          </li>
+
+          <li class="first_rectangle">
+            <h3>PUNTUALIDAD</h3>
+            <p class="job_description">
+              Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
+              empresa: respetar su tiempo y respetar los plazos acordados.
+            </p>
+          </li>
+
+          <li class="first_rectangle">
+            <h3>PLANIFICACION</h3>
+            <p class="job_description">
+              Usted podra observar y participar en cada fase del desarrollo y aplicacion de
+              soluciones.
+            </p>
+          </li>
+
+          <li class="first_rectangle">
+            <h3>TECNOLOGIA MODERNA</h3>
+            <p class="job_description">
+              Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
+              simplificar los procesos laborales.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="dedication">
         <div class="container">
-          <ul class="list cardSet">
+          <h2 class="dedication_h2">A que nos dedicamos</h2>
+          <ul class="dedication_ul pictures">
             <li>
-              <h3 class="detail">ATENCION A LOS DETALLES</h3>
-              <p class="content">
-                Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
-                una solución a su medida.
-              </p>
+              <img src="images/escribiendoteclado.jpg" class="compu" alt="computador" width="375" />
             </li>
             <li>
-              <h3 class="detail">PUNTUALIDAD</h3>
-              <p class="content">
-                Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
-                empresa: respetar su tiempo y respetar los plazos acordados.
-              </p>
+              <img src="images/smartphoneui.jpg" class="mobil" alt="celular" width="375" />
             </li>
             <li>
-              <h3 class="detail">PLANIFICACIÓN</h3>
-              <p class="content">
-                Usted podrá observar y participar en cada fase del desarrollo y aplicación de
-                soluciones.
-              </p>
-            </li>
-            <li>
-              <h3 class="detail">TEGNOLOGÍA MODERNA</h3>
-              <p class="content">
-                Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
-                simplificar los procesos laborales.
-              </p>
+              <img src="images/paletadecolores.jpg" class="tablet" alt="tablet" width="375" />
             </li>
           </ul>
         </div>
       </section>
-      <section class="mainAbout section">
+
+      <section class="our__team">
         <div class="container">
-          <h2 class="subtitle">A qué nos dedicamos</h2>
-          <ul class="list about">
-            <li class="aboutImg">
-              <img src="./images/capa1.jpg" alt="Code" class="img" width="370px"/>
-            </li>
-            <li class="aboutImg">
-              <img src="./images/capa2.jpg" alt="Web" class="img" width="370px"/>
-            </li>
-            <li>
-              <img src="./images/capa3.jpg" alt="Design" class="img" width="370px"/>
-            </li class="aboutImg">
-          </ul>
-        </div>
-      </section>
-      <section id="mainTeam" class="team section">
-        <div class="container">
-          <h2 class="subtitle">Nuestro equipo</h2>
-          <ul class="list cardSet">
-            <li class="teamMember memberCard">
-              <img class="teamPhoto img" src="./images/capa4.jpg " alt="Andres" width="270"  />
-              <div class="teamContent">
-                <h3 class="teamName">Andrés Cubo</h3>
-              <p class="teamJob">Diseñador de Productos</p>
+          <h2 class="team_title">Nuestro Equipo</h2>
+          <ul class="our__team_ul team_list">
+            <li class="our__team_image">
+              <div class="img_autor">
+                <img src="images/andrescubo.jpg" class="name_img" alt="andres" width="270" />
+                <div class="autor">
+                  <p class="name_worker">Andres Cubo</p>
+                  <p class="profesion">Disenador de Productos</p>
+                </div>
               </div>
             </li>
-            <li class="teamMember memberCard">
-              <img class="teamPhoto img" src="./images/capa5.jpg" alt="Carla" width="270"  />
-              <div class="teamContent">
-              <h3 class="teamName">Carla Palacios</h3>
-              <p class="teamJob">Desarrolladora Frontend</p>
+
+            <li class="our__team_image">
+              <div class="img_autor">
+                <img src="images/carlapalacios.jpg" class="name_img alt="carla" width="270" />
+                <div class="autor">
+                  <p class="name_worker">Carla Trespalacio</p>
+                  <p class="profesion">Desarrollador Frontend</p>
+                </div>
               </div>
             </li>
-            <li class="teamMember memberCard">
-              <img class="teamPhoto img" src="./images/capa6.jpg" alt="Mario" width="270"  />
-              <div class="teamContent">
-              <h3 class="teamName">Mario Dorado</h3>
-              <p class="teamJob">Marketing</p>
+
+            <li class="our__team_image">
+              <div class="img_autor">
+                <img src="images/mariodorado.jpg" class="name_img alt="mario" width="270" />
+                <div class="autor">
+                  <p class="name_worker">Mario Dorado</p>
+                  <p class="profesion">Marketing</p>
+                </div>
               </div>
             </li>
-            <li class="teamMember memberCard">
-              <img class="teamPhoto img" src="./images/capa7.jpg" alt="Pablo" width="270"  />
-              <div class="teamContent">
-              <h3 class="teamName">Pablo Mijangos</h3>
-              <p class="teamJob">Diseñador IU</p>
+
+            <li class="our__team_image">
+              <div class="img_autor">
+                <img src="images/pablomijangos.jpg" class="name_img alt="pablo" width="270" />
+                <div class="autor">
+                  <p class="name_worker">Pablo Mijangos</p>
+                  <p class="profesion">Disenador IU</p>
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- footer-section-->
     <footer class="footer">
       <div class="container">
-        <div class="footerDetail">
-        <a href="./index.html" class="iconName">WebStudio </a>
-        <ul class="list detailList">
-          <li><address><a href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
-                class="ubication link">Calz. Ticomán 500, Ciudad de México, CDMX, México</a></address>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footerContact link">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+525555296000" class="footerContact link">+525 555 296 000</a></li>
-        </ul>
-      </div>
+        <span class="footer_logo">WebStudio</span>
+        <address class="foot_contact">
+          <ul class="foot_links">
+            <li>
+              <a class="contact_address" href="#GoogleMapsURl"
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+            </li>
+            <li><a class="contact" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="contact" href="tel:+525555296000">+52 55 5529 6000</a></li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

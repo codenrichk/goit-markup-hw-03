@@ -2,154 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portafolio</title>
   </head>
+
   <body>
-    <header class="navBar">
-      <div class="container">
-        <nav class="navSection">
-          <span class="navIcon"><a href="./index.html" class="iconName">WebStudio </a></span>
-          <div class="navBox">
-            <ul class="list navList">
-              <li><a href="./index.html" class="link navLink">Estudio</a></li>
-              <li><a href="./portfolio.html" class="link navLink current">Portafolio</a></li>
-              <li><a href="#" class="link navLink">Contactos</a></li>
-            </ul>
-            <ul class="list navList">
-              <li>
-                <a href="mailto:info@devstudio.com" class="navContact link">info@devstudio.com</a>
-              </li>
-              <li><a href="tel:+52555296000" class="navContact link">+525 555 296 000</a></li>
-            </ul>
-          </div>
+    <!-- header-section-->
+       <header class="main_header">
+      <div class="navigation_container container">
+        <span><a class="logo" href="#">WebStudio</a></span>
+        <nav class="navigation">
+          <ul class="navigation_bar">
+            <li><a href="./index.html" class="nav_tap ">Estudio</a></li>
+            <li><a href="./portfolio.html" class="nav_tap current">Portafolio</a></li>
+            <li><a href="#" class="nav_tap">Contactos</a></li>
+          </ul>
         </nav>
+        <ul class="navigation_links">
+          <li><a class="_link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="_link" href="tel:+525555296000">+52 555 529 6000</a></li>
+        </ul>
       </div>
     </header>
+
+    <div class="linea"></div>  
     <main>
-      <section id="shop" class="container section">
-        <div class="filter">
-          <ul class="list filterList">
-            <li class="filterButton">
-              <button type="button" class="filterClass filterCurrent">Todo</button>
+      <!-- section5-->
+        <div class="filters container section">
+          <ul class="list1">
+            <li>
+              <button type="button" class="button-0 ">Todo</button>
             </li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Sitios-web</button>
+            <li>
+              <button type="button" class="button-0">Sitios-web</button>
             </li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Aplicaciones</button>
+            <li>
+              <button type="button" class="button-0">Aplicaciones</button>
             </li>
-            <li class="filterButton"><button type="button" class="filterClass">Diseño</button></li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Marketing</button>
-            </li>
-          </ul>
-          <h1 class="invisible">PORTAFOLIO</h1>
-        </div>
-        <div class="portafolio">
-          <ul class="list portafolioCard">
-            <li class="product">
-              <img src="./images/port1.jpg" alt="Tecnoduck" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Tecnoduck</h3>
-                <p class="content">Sitio-web</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port2.jpg" alt="Poster" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Póster de Nueva Orleans vs Estrella Dorada</h3>
-                <p class="content">Diseño</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port3.jpg" alt="Restaurante" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Restaurante de Mariscos</h3>
-                <p class="content">Aplicaciones</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port4.jpg" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Proyecto Prime</h3>
-                <p class="content">Marketing</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port5.jpg" alt="Cajas" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Proyecto Cajas</h3>
-                <p class="content">Aplicaciones</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port6.jpg" alt="Inspiracion" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">La inspiración no tiene límites</h3>
-                <p class="content">Sitio-web</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port7.jpg" alt="Edicion" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Edición Limitada</h3>
-                <p class="content">Diseño</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port8.jpg" alt="Lab" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Proyecto LAB</h3>
-                <p class="content">Marketing</p>
-              </div>
-            </li>
-            <li class="product">
-              <img src="./images/port9.jpeg" alt="Negocio" class="img" width="370px" />
-              <div class="cardContent">
-                <h3 class="productName">Negocio en Crecimiento</h3>
-                <p class="content">Aplicaciones</p>
-              </div>
+            <li>
+              <button type="button" class="button-0">Diseno</button>
+            </li> 
+            <li>
+              <button type="button" class="button-0">Marketing</button>
             </li>
           </ul>
         </div>
+      </>
+      <section class="projects container section">
+          <ul class="projects_img">
+            <li class="projects_li descripcion_box">
+              <img src="images/tecnoduck.jpg" class="img_portafolio" alt="Sitio web" width="370" />
+             
+                  <div class="other_descripcion" >
+                  <h2 class="tittle_descripcion ">Tecnoduck</h2>
+                  <p class="tittle_projects">Sitio-web</p>
+                  </div>
+            </li>
+
+            <li class="projects_li descripcion_box">
+              <img src="images/posternuevaorleansvs.jpg" alt="Diseño" width="370" />
+                <div class=" other_descripcion" >
+                   <h2 class="tittle_descripcion">Póster de Nueva Orleans vs strella Dorada</h2>
+                </div>
+             </li>
+
+            <li class="projects_li descripcion_box">
+              <img src="images/restauranteseafood.jpg" alt="Aplicacion" width="370" />
+                <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Restaurante Seafood</h2>
+                  <p class="tittle_projects">Aplicaciones</p>
+                </div>
+            </li>
+
+            <li class="projects_li descripcion_box">
+              <img src="images/proyectoprime.jpg" alt="Marketing" width="370" />
+                 <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Proyecto Prime</h2>
+                  <p class="tittle_projects">Marketing</p>
+                </div>
+            </li>
+
+            <li class="projects_li descripcion_box">
+               <img src="images/proyectocajas.jpg" alt="Aplicaciones" width="370" />
+                <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Proyecto Cajas</h2>
+                  <p class="tittle_projects">Aplicaciones</p>
+                </div>
+            </li>
+
+            <li class="projects_li descripcion_box ">
+              <img src="images/lainspiracionnotienelimites.jpg" alt="Sitio web" width="370" />
+               <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">La inspiración no tiene limites</h2>
+                  <p class="tittle_projects">Sitio web</p>
+               </div>
+            </li>
+
+            <li class="projects_li descripcion_box">
+              <img src="images/edicionlimitada.jpg" alt="Diseño" width="370" />
+                <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Edición Limitada</h2>
+                  <p class="tittle_projects">Diseño</p>
+                </div>
+            </li>
+
+            <li class="projects_li descripcion_box">
+              <img src="images/proyectolab.jpg" alt="Marketing" width="370" />
+               <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Proyecto LAB</h2>
+                  <p class="tittle_projects">Marketing</p>
+                </div>
+            </li>
+            
+            <li class="projects_li descripcion_box">
+                <img src="images/negocioencrecimiento.jpeg" alt="Aplicaciones" width="370" />
+                <div class=" other_descripcion" >
+                  <h2 class="tittle_descripcion ">Negocio en Crecimiento</h2>
+                  <p class="tittle_projects">Aplicaciones</p>
+                </div>
+            </li>
+          </ul>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footerBox">
-        <div class="footerDetail">
-          <a href="./index.html" class="iconName">WebStudio </a>
-          <ul class="list detailList">
+  </body>
+  <!-- footer-section-->
+   <footer class="footer">
+      <div class="container">
+        <span class="footer_logo">WebStudio</span>
+        <address class="foot_contact">
+          <ul class="foot_links">
             <li>
-              <address>
-                <a
-                  href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
-                  class="ubication link"
-                  >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-                >
-              </address>
+              <a class="contact_address" href="#GoogleMapsURl"
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="footerContact link">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+525555296000" class="footerContact link">+525 555 296 000</a></li>
+            <li><a class="contact" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="contact" href="tel:+525555296000">+52 55 5529 6000</a></li>
           </ul>
-        </div>
-        <div class="footerSocial">
-          <h3 class="findUs">ENCUENTRENOS EN</h3>
-          <ul class="list socialList">
-            <li><a href="#" class="footerContact link">Instagram</a></li>
-            <li><a href="#" class="footerContact link">Twitter</a></li>
-            <li><a href="#" class="footerContact link">Facebook</a></li>
-            <li><a href="#" class="footerContact link">LinkIn</a></li>
-          </ul>
-        </div>
+        </address>
       </div>
     </footer>
-  </body>
 </html>
