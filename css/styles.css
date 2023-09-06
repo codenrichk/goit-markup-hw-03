@@ -246,9 +246,6 @@ body {
 
 /* section our__team */
 
-.our__team {
-}
-
 .team_list {
   list-style: none;
 }
@@ -346,9 +343,6 @@ li {
 /* section regular_customers*/
 
 /* section projects */
-
-.projects {
-}
 
 .projects_img {
   display: flex;
