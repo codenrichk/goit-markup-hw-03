@@ -359,7 +359,6 @@ li {
 }
 
 .projects_li {
-  border: 1px solid rgba(238, 238, 238, 1);
   margin-bottom: 30px;
 }
 
@@ -385,6 +384,7 @@ li {
 
 .other_descripcion {
   padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .tittle_descripcion {
